@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Masters | 12th Board MCQ Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="header fade-in">
+            <div class="badge">MISSION 70/70</div>
+            <h1 class="title">Organic Chemistry <br>MCQ Challenge</h1>
+            <p style="color: #94a3b8; margin-bottom: 2rem;">Total 15 questions covering all mechanisms & reactions.
+                Ready, Ishu?</p>
+            <button class="btn-restart" onclick="startQuiz()">Start Challenge 🚀</button>
+            <p class="note-from-pratik">"Bas khud par bharosa rakhiye! ❤️"</p>
+        </div>
+
+        <!-- Quiz Area -->
+        <div id="quiz-area" style="display: none;" class="fade-in">
+            <div class="header">
+                <div class="badge" id="question-counter">Question 1/15</div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress"></div>
+            </div>
+
+            <div class="question-box">
+                <p class="question-text" id="question">What is the IUPAC name of the simplest secondary amine?</p>
+                <div class="options-grid" id="options">
+                    <!-- Buttons injected by JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="result-screen fade-in">
+            <h1 class="title">Test Complete!</h1>
+            <p id="result-text" style="color: #94a3b8;">Amazing effort, Ishu!</p>
+            <div class="score-circle">
+                <span id="final-score">15</span>/15
+            </div>
+            <p id="feedback-msg" style="margin-bottom: 2rem; font-weight: 600;"></p>
+            <button class="btn-restart" onclick="location.reload()">Reset Test 🔄</button>
+            <p class="note-from-pratik" style="margin-top: 2rem;">"I am so proud of you! ❤️"</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
